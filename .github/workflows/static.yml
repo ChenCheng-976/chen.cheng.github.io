@@ -70,12 +70,12 @@ jobs:
         uses: actions/checkout@v4  # ✅ Updated to the latest version
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4  # ✅ Updated version
+        uses: actions/configure-pages@v4  # ✅ Updated to v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "./"  # Ensure this is the correct path to your static files
+          path: "./"  # ✅ Ensure correct directory is uploaded
 
       - name: Deploy to GitHub Pages
         id: deployment
